@@ -28,6 +28,10 @@
       <li class="nav-item">
         <a class="nav-link" href="cliente-cadastro.php">Cadastrar cliente da Loja</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="admin/cadastro-depar.php">Solicitar Departamento</a>
+      </li>
+      
       
     </ul>
   

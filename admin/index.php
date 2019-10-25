@@ -1,9 +1,9 @@
-<?php include "incluedes/header.php";?>
-    <h1>Hello, world!</h1>
+<?php include "view/header.php";?>
+    <h1 >Hello, ADMIN!</h1>
 
 
 
-    <?php include "incluedes/footer.php";?>
+    <?php include "view/footer.php";?>
 
    
    

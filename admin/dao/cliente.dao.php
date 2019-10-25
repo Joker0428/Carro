@@ -15,6 +15,21 @@ class DAOCliente{
         return "Cadastro com sucesso";
 
     }
+    public function listaCliente(){
+
+        $sql = "SELECT * FROM cliente";
+        $con = Conexao::getInstance()->prepare($sql);
+        $con->execute();
+
+        $lista = array();
+
+        while($cliente = $con->fetch(PDO::FETCH_ASSOC)) {
+            $lista[] = $cliente;
+        }
+
+        return $lista;
+
+    }
 }
 
 
