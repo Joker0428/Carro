@@ -1,8 +1,8 @@
 <?php
 
-    include 'admin/model/conexao.php';
-    include 'admin/model/cliente.class.php';
-    include 'admin/dao/cliente.dao.php';
+    include 'model/conexao.php';
+    include 'model/cliente.class.php';
+    include 'dao/cliente.dao.php';
 
     if($_POST){
 

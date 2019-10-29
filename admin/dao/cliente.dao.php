@@ -15,22 +15,23 @@ class DAOCliente{
         return "Cadastro com sucesso";
 
     }
-    public function listaCliente(){
+    public function buscaPorId($id){
 
-        $sql = "SELECT * FROM cliente";
+        $sql = "SELECT * FROM cliente WHERE pk_id = :id";
         $con = Conexao::getInstance()->prepare($sql);
+        $con->bindValue(":id", $id);
         $con->execute();
 
-        $lista = array();
+        $cliente = new Cliente();
 
-        while($cliente = $con->fetch(PDO::FETCH_ASSOC)) {
-            $lista[] = $cliente;
-        }
-
-        return $lista;
+        $cliente = $con->fetch(PDO::FETCH_ASSOC);
+        //print_r($cliente);//testa saida 
+        return $cliente;
 
     }
-}
+
+    }
+
 
 
 ?>

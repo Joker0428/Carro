@@ -23,7 +23,7 @@
         $usuario = new Usuario();
 
         $usuario = $con->fetch(PDO::FETCH_ASSOC);
-        print_r($usuario);//testa saida 
+        // print_r($usuario);//testa saida 
         return $usuario;
 
     }
