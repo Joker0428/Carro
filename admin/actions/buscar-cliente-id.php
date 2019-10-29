@@ -11,7 +11,7 @@
         try{
             $DAO = new DAOCliente();
             $cliente = $DAO->buscaPorId($_GET['id']);
-    
+            
         }catch(Exception $e){
             $msg = $e->getMessage();
         }
