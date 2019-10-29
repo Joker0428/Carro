@@ -1,8 +1,7 @@
-
-<?php include "incluedes/cadastrar-depar.php";?>  
+<?php include "actions/lista-clientes.php";?>  
 <?php include "view/header.php";?>
 
-<?php include "view/form-departamento.php";?>
+<?php include "view/lista-cliente.php";?>
 
 <?php include "view/mensagem.php";?>
 <?php include "view/footer.php";?>

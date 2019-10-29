@@ -1,5 +1,5 @@
 
-<?php include "incluedes/cliente-cadastrar.php";?>  
+<?php include "actions/cliente-cadastrar.php";?>  
 <?php include "view/header.php";?>
 
 
