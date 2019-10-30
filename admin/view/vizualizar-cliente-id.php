@@ -29,7 +29,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="email"></label>  
   <div class="col-md-4">
-  <input id="email" name="email" type="text" placeholder="E-mail" class="form-control input-md" required="">
+  <input id="email" name="email" value="<?php echo $cliente['email']; ?>" type="text" placeholder="E-mail" class="form-control input-md" required="">
     
   </div>
 </div>
@@ -38,7 +38,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="cpf"></label>  
   <div class="col-md-4">
-  <input id="cpf" name="cpf" type="text" placeholder="CPF" class="form-control input-md" required="">
+  <input id="cpf" name="cpf" value="<?php echo $cliente['cpf']; ?>" type="text" placeholder="CPF" class="form-control input-md" required="">
     
   </div>
 </div>

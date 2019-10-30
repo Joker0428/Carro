@@ -12,6 +12,20 @@
         return "CADASTROU O ADMIN COM SUCESSO";
 
     }
+    public function listaUsuario(){
+        $sql = "SELECT * FROM usuario";
+        $con = Conexao::getInstance()->prepare($sql);
+        $con->execute();
+
+        $lista = array();
+
+        while($usuario = $con->fetch(PDO::FETCH_ASSOC)){
+            $lista[] = $usuario;
+        }
+        
+        return $lista;
+        
+    }
    
     public function buscaPorId($id){
 
@@ -27,6 +41,7 @@
         return $usuario;
 
     }
+  
 }
 
 

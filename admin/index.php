@@ -1,5 +1,5 @@
 <?php include "view/header.php";?>
-    <h1 >Hello, ADMIN!</h1>
+    <h1 class="container">Hello, ADMIN!</h1>
 
 
 
