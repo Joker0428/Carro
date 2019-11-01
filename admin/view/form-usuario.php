@@ -1,6 +1,6 @@
 <h1>CADASTRO DO ADMIN</h1>
     
-<form class="form-horizontal" method="post" action="ctrl-cadastro-usuario.php">
+<form class="form-horizontal" method="post" action="cadastrar">
 <fieldset>
 
 <!-- Form Name -->
