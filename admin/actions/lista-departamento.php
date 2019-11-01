@@ -1,6 +1,6 @@
 <?php
-    include "model/conexao.php";
-    include "dao/departamento.dao.php";
+    require_once "model/conexao.php";
+    require_once  "dao/departamento.dao.php";
 
         $obj = new DAODepartamento();
 

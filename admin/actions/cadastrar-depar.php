@@ -1,8 +1,8 @@
 <?php
 
-    include 'model/conexao.php';
-    include 'model/departamento.class.php';
-    include 'dao/departamento.dao.php';
+    require_once  'model/conexao.php';
+    require_once  'model/departamento.class.php';
+    require_once  'dao/departamento.dao.php';
 
     if($_POST){
 

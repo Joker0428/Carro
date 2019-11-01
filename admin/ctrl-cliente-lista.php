@@ -1,10 +1,10 @@
-<?php include "actions/lista-clientes.php";?>  
-<?php include "view/header.php";?>
+<?php require_once "actions/lista-clientes.php";?>  
+<?php require_once "view/header.php";?>
 
-<?php include "view/lista-cliente.php";?>
+<?php require_once "view/lista-cliente.php";?>
 
-<?php include "view/mensagem.php";?>
-<?php include "view/footer.php";?>
+<?php require_once "view/mensagem.php";?>
+<?php require_once "view/footer.php";?>
 
    
    

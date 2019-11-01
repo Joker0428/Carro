@@ -1,10 +1,10 @@
-<?php include "actions/lista-usuario.php";?>  
-<?php include "view/header.php";?>
+<?php require_once  "actions/lista-usuario.php";?>  
+<?php require_once  "view/header.php";?>
 
-<?php include "view/lista-usuario.php";?>
+<?php require_once  "view/lista-usuario.php";?>
 
-<?php include "view/mensagem.php";?>
-<?php include "view/footer.php";?>
+<?php require_once  "view/mensagem.php";?>
+<?php require_once  "view/footer.php";?>
 
    
    

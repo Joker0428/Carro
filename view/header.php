@@ -23,13 +23,13 @@
         <a class="nav-link" href="index.php">Home </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Lista de clientes</a>
+        <a class="nav-link disabled" href="#">Lista de clientes</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="ctrl-cliente-cadastro.php">Cadastrar cliente da Loja</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="admin/ctrl-cadastro-depar.php">Solicitar Departamento</a>
+        <a class="nav-link disabled" href="admin/ctrl-cadastro-depar.php">Solicitar Departamento</a>
       </li>
       
       

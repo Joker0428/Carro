@@ -1,11 +1,11 @@
 
-<?php include "actions/cadastrar-depar.php";?>  
-<?php include "view/header.php";?>
+<?php require_once "actions/cadastrar-depar.php";?>  
+<?php require_once "view/header.php";?>
 
-<?php include "view/form-departamento.php";?>
+<?php require_once "view/form-departamento.php";?>
 
-<?php include "view/mensagem.php";?>
-<?php include "view/footer.php";?>
+<?php require_once "view/mensagem.php";?>
+<?php require_once "view/footer.php";?>
 
    
    
