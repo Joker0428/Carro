@@ -1,4 +1,7 @@
 <?php
+namespace LOJA\DAO;
+use LOJA\Model\Conexao;
+use LOJA\Model\Departamento;
 
 class DAODepartamento{
     public function cadastrar(Departamento $departamento){

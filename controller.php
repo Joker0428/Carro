@@ -13,8 +13,8 @@
     //router = departamentolistar
 
         case 'departamentocadastrar':
-            include "actions/cadastrar-depar.php";
-            new 
+           
+            new \LOJA\Actions\DepartamentoCadastrar;
             $view = "form-departamento.php";
             break;
 
