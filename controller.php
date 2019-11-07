@@ -1,7 +1,11 @@
 <?php 
-    //capturando os dados da url
+    
+
+   //capturando os dados da url
     //ex.: admin/departamento/cadastrar/listar
     //model=departamento & action-listar
+    require "incluedes/autoload.php";
+    
     $router = $_GET['model'].$_GET['action'];
     $view = "";
 
@@ -10,6 +14,7 @@
 
         case 'departamentocadastrar':
             include "actions/cadastrar-depar.php";
+            new 
             $view = "form-departamento.php";
             break;
 
@@ -22,6 +27,11 @@
             include "actions/lista-clientes.php";
             $view = "lista-cliente.php";
             break;
+            
+        case 'clientecadastrar':
+        include "actions/cliente-cadastrar.php";
+        $view = "form-cliente.php";
+        break;
 
         case 'clientevizualizar':
             include "actions/buscar-cliente-id.php";
@@ -45,21 +55,27 @@
             $view = "lista-usuario.php";
             break;
 
-        case 'usuariovizualizar';
+        case 'usuariovizualizar':
             include "actions/buscar-usuario-id.php";
             $view = "vizualiza-usuario-id.php";
             break;
 
-            case 'produtolistar';
+            case 'produtolistar':
             include "actions/produto-lista.php";
             $view = "lista-produto.php";
             break;
 
+        case 'fornecedorcadastrar':
+            include "actions/cadastrar-fornecedor.php";
+            $view = "form-fornecedor.php";
+            break;
+
+        case 'fornecedorlistar':
+            include "actions/lista-fornecedor.php";
+            $view = "lista-fornecedor.php";
+            break;
+
        
-
-
-
-
         default:
             echo "default";
         break; 

@@ -1,5 +1,7 @@
 <?php
 
+    namespace LOJA\Model;
+
 class Departamento{
     private $id;
     private $nome;
