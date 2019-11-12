@@ -9,81 +9,99 @@
     $router = $_GET['model'].$_GET['action'];
     $view = "";
 
+    $url = "http://localhost/carro";
+
     switch($router){
     //router = departamentolistar
 
-        case 'departamentocadastrar':
+        case 'servicocadastrar':
            
-            new \LOJA\Actions\DepartamentoCadastrar;
-            $view = "form-departamento.php";
+            $obj = new \LOJA\API\ServicoCadastrar;
+            $msg = $obj->msg;
+            $view = "form-servico.php";
             break;
 
-        case 'departamentolistar':
-            include "actions/lista-departamento.php";
-            $view = "lista-departamento.php";
+        case 'servicolistar':
+            $obj = new \LOJA\API\ServicoListar;
+            $lista = $obj->lista;
+            $view = "lista-servico.php";
+            break;
+
+        case 'departamentovizualizar':
+            $obj = new \LOJA\API\DepartamentoVizualizar;
+            $departamento = $obj->dados;
+            $view = "vizualizar-departamentp-id.php";
             break;
 
         case 'clientelistar':
-            include "actions/lista-clientes.php";
+            $obj = new \LOJA\API\ClienteListar;
+            $lista = $obj->lista;
             $view = "lista-cliente.php";
             break;
             
         case 'clientecadastrar':
-        include "actions/cliente-cadastrar.php";
-        $view = "form-cliente.php";
-        break;
+            $obj = new \LOJA\API\ClienteCadastrar;
+            $msg = $obj->msg;
+            $view = "form-cliente.php";
+            break;
 
         case 'clientevizualizar':
-            include "actions/buscar-cliente-id.php";
+            $obj = new \LOJA\API\ClienteVizualizar;
+            $cliente = $obj->dados;
             $view = "vizualizar-cliente-id.php";
             break;
         
         
         case 'produtocadastrar':
-            include "actions/cadastrar-produto.php";
-            include "actions/lista-departamento.php";
+            $obj = new \LOJA\API\ProdutoCadastrar;
+            $msg = $obj->msg;
+
+            $obj2 = new \LOJA\API\DepartamentoListar;
+            $lista = $obj2->lista;
+
             $view = "form-produto.php";
             break;
             
         case 'usuariocadastrar':
-            include "actions/cadastrar-usuarios.php";
+            $obj = new \LOJA\API\UsuarioCadastrar;
+            $msg = $obj->msg;
             $view = "form-usuario.php";
             break;
 
         case 'usuariolistar':
-            include "actions/lista-usuario.php";
+            $obj = new \LOJA\API\UsuarioListar;
+            $lista = $obj->lista;
             $view = "lista-usuario.php";
             break;
 
         case 'usuariovizualizar':
-            include "actions/buscar-usuario-id.php";
+            include "API/buscar-usuario-id.php";
             $view = "vizualiza-usuario-id.php";
             break;
 
             case 'produtolistar':
-            include "actions/produto-lista.php";
+            include "API/produto-lista.php";
             $view = "lista-produto.php";
             break;
 
         case 'fornecedorcadastrar':
-            include "actions/cadastrar-fornecedor.php";
+            include "API/cadastrar-fornecedor.php";
             $view = "form-fornecedor.php";
             break;
 
         case 'fornecedorlistar':
-            include "actions/lista-fornecedor.php";
+            include "API/lista-fornecedor.php";
             $view = "lista-fornecedor.php";
             break;
 
        
         default:
-            echo "default";
+            $view = "form-cliente.php";
         break; 
     }
 
-    include "view/header.php";
+    
     include "view/{$view}";
-    include "view/mensagem.php";
-    include "view/footer.php";
+
 ?>
 

@@ -33,7 +33,8 @@
           Clientes
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="ctrl-cliente-lista.php">Lista de Clientes</a>
+          <a class="dropdown-item" href="<?php echo $url;?>/cliente/listar">Lista de Clientes</a>
+          <a class="dropdown-item" href="<?php echo $url;?>/cliente/cadastrar">Cadastro de cliente</a>
   
         </div>
       </li>
@@ -43,7 +44,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item " href="ctrl-usuario-lista.php">Lista de usuarios</a>
-          <a class="dropdown-item" href="ctrl-cadastro-usuario.php">Cadastro de Usuarios</a>
+          <a class="dropdown-item" href="<?php echo $url;?>/cliente/cadastrar">Cadastro de usuario</a>
          
         </div>
       </li>

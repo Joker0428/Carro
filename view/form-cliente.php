@@ -1,6 +1,7 @@
-<h1>CADASTRO Da Loja</h1>
+<?php include "view/header.php";?>
+<legend> Cadastrar Cliente </legend>
     
-<form class="form-horizontal" method="post" action="ctrl-cliente-cadastro.php">
+<form class="form-horizontal" method="post" action="cadastrar">
 <fieldset>
 
 <!-- Form Name -->
@@ -19,7 +20,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="telefone"></label>  
   <div class="col-md-4">
-  <input id="endereco" name="endereco" type="text" placeholder="Endereço" class="form-control input-md" required="">
+  <input id="cpf" name="cpf" type="text" placeholder="CPF" class="form-control input-md" required="">
     
   </div>
 </div>
@@ -35,24 +36,44 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="email"></label>  
+  <label class="col-md-4 control-label" for="endereco"></label>  
   <div class="col-md-4">
-  <input id="email" name="email" type="text" placeholder="E-mail" class="form-control input-md" required="">
+  <input id="endereco" name="endereco" type="text" placeholder="Endereço" class="form-control input-md" required="">
     
   </div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="cpf"></label>  
+  <label class="col-md-4 control-label" for="telefone"></label>  
   <div class="col-md-4">
-  <input id="cpf" name="cpf" type="text" placeholder="CPF" class="form-control input-md" required="">
+  <input id="telefone" name="telefone" type="text" placeholder="Telefone" class="form-control input-md" required="">
     
   </div>
 </div>
 
-<!-- Button -->
-<div class="form-group">
+
+
+  <!-- Text input-->
+  <div class="form-group">
+  <label class="col-md-4 control-label" for="email"></label>  
+  <div class="col-md-4">
+  <input id="email" name="email" type="text" placeholder="E-mail" class="form-control input-md" required="">
+    
+  </div>
+  </div>
+
+  <!-- Text input-->
+  <div class="form-group">
+  <label class="col-md-4 control-label" for="senha"></label>  
+  <div class="col-md-4">
+  <input id="senha" name="senha" type="password_verify" placeholder="Senha" class="form-control input-md" required="">
+    
+  </div>
+  </div>
+
+  <!-- Button -->
+  <div class="form-group">
   <label class="col-md-4 control-label" for="singlebutton"></label>
   <div class="col-md-4">
     <button id="singlebutton" name="singlebutton" class="btn btn-primary">Cadastrar</button>
@@ -61,3 +82,6 @@
 
 </fieldset>
 </form>
+</div>
+
+<?php include "view/footer.php";?>

@@ -1,10 +1,15 @@
 <?php
-   if($_POST){
-  require_once  "model/conexao.php";
-  require_once  "model/departamento.class.php";
-  require_once  "model/produto.class.php";
-  require_once  "dao/produto.dao.php";
-    
+  namespace LOJA\API;
+  
+  use LOJA\Model\Produto;
+  use LOJA\Model\Departamento;
+  use LOJA\DAO\DAOProduto;
+
+  class ProdutoCadastrar{
+    public $msg;
+
+    function __construct(){
+      if($_POST){
   try{
     //criamos um objeto prudoto
       $produto = new Produto();
@@ -20,10 +25,12 @@
       $produto->setDepartamento($departamento);
 
       $DAO = new DAOProduto();
-      $msg = $DAO->cadastrar($produto);
+      $this->msg = $DAO->cadastrar($produto);
       
-  }catch(Exception $e){
-      $msg = $e->getMessage();
+    }catch(Exception $e){
+      $this->msg = $e->getMessage();
+    }
   }
+}
 }
 ?>

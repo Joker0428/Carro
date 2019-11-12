@@ -1,3 +1,4 @@
+<?php include "view/header.php";?>
 <h1>USUARIO</h1>
     
 <form class="form-horizontal" method="post" action="ctrl-cadastro-usuario.php">
@@ -37,5 +38,6 @@
 
 </fieldset>
 </form>
+<?php include "view/footer.php";?>
 
 

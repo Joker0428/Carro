@@ -1,4 +1,5 @@
 
+<?php include "view/header.php";?>
 <table class="table">
     <thead>
         <tr>
@@ -8,13 +9,14 @@
         </th>
     </thead>
     <tbody>
-        <?php foreach($lista as $departamento) { ?>
+        <?php foreach($lista as $servico) { ?>
             <tr>
-                <th scope="row"><?php echo $departamento['pk_departamento']?></th>    
-                <td><?php echo $departamento['nome']?></td>
+                <th scope="row"><?php echo $servico['pk_servico']?></th>    
+                <td><?php echo $servico['nome']?></td>
                
             </tr>
         <?php } ?>
     </tbody>
 </table>
+<?php include "view/footer.php";?>
 

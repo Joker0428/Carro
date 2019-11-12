@@ -1,4 +1,5 @@
-<?php
+<?php 
+	namespace LOJA\Model;
     class Produto{
        private $id;
        private $nome;

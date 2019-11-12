@@ -1,18 +1,24 @@
 <?php
 
+namespace LOJA\DAO;
+use LOJA\Model\Conexao;
+use LOJA\Model\Cliente;
+
 class DAOCliente{
     public function cadastrar(Cliente $cliente){
         $sql = "INSERT INTO cliente
-        VALUES (default, :nome, :endereco, :cep, :email, :cpf)";
+        VALUES (default, :nome, :cpf, :cep, :endereco, :telefone, :email, :senha)";
         
         $con = Conexao::getInstance()->prepare($sql);
         $con->bindValue(":nome", $cliente->getNome());
-        $con->bindValue(":endereco", $cliente->getEndereco());
-        $con->bindValue(":cep", $cliente->getCep());
-        $con->bindValue(":email", $cliente->getEmail());
         $con->bindValue(":cpf", $cliente->getCpf());
+        $con->bindValue(":cep", $cliente->getCep());
+        $con->bindValue(":endereco", $cliente->getEndereco());
+        $con->bindValue(":telefone", $cliente->getTelefone());
+        $con->bindValue(":email", $cliente->getEmail());
+        $con->bindValue(":senha", $cliente->getSenha());
         $con->execute();
-        return "Cadastro com sucesso";
+        return "Cadastrado com sucesso";
 
     }
     public function listaCliente(){
@@ -22,7 +28,7 @@ class DAOCliente{
 
         $lista = array();
 
-        while($cliente = $con->fetch(PDO::FETCH_ASSOC)){
+        while($cliente = $con->fetch(\PDO::FETCH_ASSOC)){
             $lista[] = $cliente;
         }
         return $lista;
@@ -30,14 +36,14 @@ class DAOCliente{
 
     public function buscaPorId($id){
 
-        $sql = "SELECT * FROM cliente WHERE pk_id = :id";
+        $sql = "SELECT * FROM cliente WHERE pk_cliente = :id";
         $con = Conexao::getInstance()->prepare($sql);
         $con->bindValue(":id", $id);
         $con->execute();
 
         $cliente = new Cliente();
 
-        $cliente = $con->fetch(PDO::FETCH_ASSOC);
+        $cliente = $con->fetch(\PDO::FETCH_ASSOC);
         //print_r($cliente);//testa saida 
         return $cliente;
 

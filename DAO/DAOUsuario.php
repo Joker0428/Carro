@@ -1,4 +1,8 @@
 <?php 
+    namespace LOJA\DAO;
+    use LOJA\Model\Conexao;
+    use LOJA\Model\Usuario;
+
     class DAOUsuario{
     public function cadastrar(Usuario $usuario){
         $sql = "INSERT INTO usuario
@@ -19,7 +23,7 @@
 
         $lista = array();
 
-        while($usuario = $con->fetch(PDO::FETCH_ASSOC)){
+        while($usuario = $con->fetch(\PDO::FETCH_ASSOC)){
             $lista[] = $usuario;
         }
         
@@ -36,7 +40,7 @@
 
         $usuario = new Usuario();
 
-        $usuario = $con->fetch(PDO::FETCH_ASSOC);
+        $usuario = $con->fetch(\PDO::FETCH_ASSOC);
         // print_r($usuario);//testa saida 
         return $usuario;
 

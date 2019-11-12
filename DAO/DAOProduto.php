@@ -1,8 +1,12 @@
 <?php
 
+namespace LOJA\DAO;
+use LOJA\Model\Conexao;
+use LOJA\Model\Produto;
+
 class DAOProduto{
     public function cadastrar(Produto $produto){
-        $sql = "INSERT INTO Produto
+        $sql = "INSERT INTO produto
         VALUES (default, :nome, :preco, :descricao, :departamento)";
         
         $con = Conexao::getInstance()->prepare($sql);
@@ -32,7 +36,7 @@ class DAOProduto{
     
             $lista = array();
     
-            while($produto = $con->fetch(PDO::FETCH_ASSOC)){
+            while($produto = $con->fetch(\PDO::FETCH_ASSOC)){
                 $lista[] = $produto;
             }
             return $lista;
@@ -47,7 +51,7 @@ class DAOProduto{
     
             $produto = new Produto();
     
-            $produto = $con->fetch(PDO::FETCH_ASSOC);
+            $produto = $con->fetch(\PDO::FETCH_ASSOC);
             //print_r($cliente);//testa saida 
             return $produto;
     

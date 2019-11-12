@@ -1,4 +1,5 @@
 
+<?php include "view/header.php";?>
 <table class="table">
     <thead>
         <tr>
@@ -17,4 +18,6 @@
         <?php } ?>
     </tbody>
 </table>
+
+<?php include "view/footer.php";?>
 

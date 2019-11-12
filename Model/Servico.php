@@ -2,7 +2,7 @@
 
     namespace LOJA\Model;
 
-class Departamento{
+class Servico{
     private $id;
     private $nome;
 

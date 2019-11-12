@@ -1,4 +1,4 @@
-
+<?php include "view/header.php";?>
 <h1>CADASTRO DO ADMIN</h1>
     
     <form class="form-horizontal" method="post" action="cadastrar">
@@ -54,5 +54,5 @@
     </fieldset>
     </form>
     
-    
+    <?php include "view/footer.php";?>
     
