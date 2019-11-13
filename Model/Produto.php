@@ -5,8 +5,9 @@
        private $nome;
        private $preco;
 	   private $descricao;
+	   private $imagem;
 	   
-       private $departamento;//objeto ($id e $nome)
+       private $servico;//objeto ($id e $nome)
         
     function __construct(){
 
@@ -42,13 +43,20 @@
 	public function setDescricao($descricao){
 		$this->descricao = $descricao;
 	}
-
-	public function getDepartamento(){
-		return $this->departamento;
+	public function getImagem(){
+		return $this->imagem;
 	}
 
-	public function setDepartamento($departamento){
-		$this->departamento = $departamento;
+	public function setImagem($imagem){
+		$this->imagem = $imagem;
+	}
+
+	public function getServico(){
+		return $this->servico;
+	}
+
+	public function setServico($servico){
+		$this->servico = $servico;
     }
 }
     

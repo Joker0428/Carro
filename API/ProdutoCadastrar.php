@@ -2,8 +2,9 @@
   namespace LOJA\API;
   
   use LOJA\Model\Produto;
-  use LOJA\Model\Departamento;
+  use LOJA\Model\Servico;
   use LOJA\DAO\DAOProduto;
+  use LOJA\incluedes\Util;
 
   class ProdutoCadastrar{
     public $msg;
@@ -16,13 +17,14 @@
       $produto->setNome($_POST['nome']);
       $produto->setPreco($_POST['preco']);
       $produto->setDescricao($_POST['descricao']);
+      $produto->setImagem(Util::uploadImg());
 
       //cria um objeto departamento
-      $departamento = new Departamento();
-      $departamento->setId($_POST['departamento']);
+      $servico = new Servico();
+      $servico->setId($_POST['servico']);
 
       //definindo o departamento para o produto
-      $produto->setDepartamento($departamento);
+      $produto->setServico($servico);
 
       $DAO = new DAOProduto();
       $this->msg = $DAO->cadastrar($produto);

@@ -50,11 +50,11 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Departamentos
+          Serviços
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item " href="ctrl-departemento-lista.php">Departamento Lista</a>
-          <a class="dropdown-item" href="ctrl-cadastro-depar.php">Departamento Cadastrar</a>
+          <a class="dropdown-item " href="<?php echo $url;?>/servico/listar">Serviço Lista</a>
+          <a class="dropdown-item" href="<?php echo $url;?>/servico/cadastrar">Serviço Cadastrar</a>
           
         </div>
       </li>

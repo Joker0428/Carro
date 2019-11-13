@@ -56,7 +56,7 @@
             $obj = new \LOJA\API\ProdutoCadastrar;
             $msg = $obj->msg;
 
-            $obj2 = new \LOJA\API\DepartamentoListar;
+            $obj2 = new \LOJA\API\ServicoListar;
             $lista = $obj2->lista;
 
             $view = "form-produto.php";
@@ -80,7 +80,8 @@
             break;
 
             case 'produtolistar':
-            include "API/produto-lista.php";
+            $obj = new \LOJA\API\ProdutoListar;
+            $lista = $obj->lista;
             $view = "lista-produto.php";
             break;
 
