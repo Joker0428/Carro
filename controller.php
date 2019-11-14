@@ -15,7 +15,7 @@
     //router = departamentolistar
 
         case 'servicocadastrar':
-           
+            \LOJA\incluedes\Seguranca::restritoAdm();
             $obj = new \LOJA\API\ServicoCadastrar;
             $msg = $obj->msg;
             $view = "form-servico.php";
@@ -30,6 +30,7 @@
             break;
 
         case 'departamentovizualizar':
+
             $obj = new \LOJA\API\DepartamentoVizualizar;
             $departamento = $obj->dados;
             $view = "vizualizar-departamentp-id.php";
