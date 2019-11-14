@@ -18,16 +18,17 @@
            
 
             $DAO = new DAOUsuario();
+            //VERIFICA SE EXISTE USUARIO COM NOKME E SENHA INFORMADPS
             $result= $DAO->buscaPorNomeSenha($obj);
 
-            if($result){
+            if($result){ // SE HOUVER RESULTADO
                 //GUARDO AS INFORMAÇÕES DO USARIO NA SESSÃO
                 $_SESSION['usuarioid'] = $result['id'];
                 $_SESSION['usuarionome'] = $result['nome'];
 
                 header("location: http://localhost/carro/painel/adm");
 
-            }else{
+            }else{//NÃO HOUVE RESULTADO
                 $this->msg = "Usuário/Senha inválidos";
             }
 
