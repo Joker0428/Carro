@@ -3,11 +3,12 @@
 
   class UsuarioLogoff{
 
-       function __contruct(){
+       function __construct(){
            unset($_SESSION['usuarioid']);
            unset($_SESSION['usuarionome']);
            unset($_SESSION);
-           header("location: http://localhost/carro/painel/adm");
+           session_destroy();
+           header("location: http://localhost/carro/login/adm");
         }
     }
 ?>
