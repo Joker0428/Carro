@@ -1,5 +1,5 @@
 <?php 
-    
+    session_start();
 
    //capturando os dados da url
     //ex.: admin/departamento/cadastrar/listar
@@ -22,6 +22,8 @@
             break;
 
         case 'servicolistar':
+            \LOJA\incluedes\Seguranca::restritoAdm();
+
             $obj = new \LOJA\API\ServicoListar;
             $lista = $obj->lista;
             $view = "lista-servico.php";
@@ -93,6 +95,21 @@
         case 'fornecedorlistar':
             include "API/lista-fornecedor.php";
             $view = "lista-fornecedor.php";
+            break;
+
+        case 'loginadm':
+            $obj = new \LOJA\API\UsuarioLogar;
+            $msg = $obj->msg;
+            $view = "form-login-adm.php";
+            break;
+    
+        case 'paineladm':
+            $view = "painel-adm.php";
+            break;
+
+        case 'painellogoff':
+            $obj = new \LOJA\API\UsuarioLogoff;
+            $view = "form-login-adm.php";
             break;
 
        

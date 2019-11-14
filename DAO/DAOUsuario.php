@@ -16,6 +16,23 @@
         return "CADASTROU O ADMIN COM SUCESSO";
 
     }
+    public function buscaPorNomeSenha(usuario $usuario){
+        $sql = "SELECT pk_usuario as id,nome FROM usuario
+        WHERE  nome = :nome AND senha = :senha";
+        
+        $con = Conexao::getInstance()->prepare($sql);
+        $con->bindValue(":nome", $usuario->getNome());
+        $con->bindValue(":senha", $usuario->getSenha());
+        $result = $con->execute();
+
+        
+        $obj = new Usuario();
+        $obj = $con->fetch(\PDO::FETCH_ASSOC);
+        return $obj;
+
+        
+
+    }
     public function listaUsuario(){
         $sql = "SELECT * FROM usuario";
         $con = Conexao::getInstance()->prepare($sql);
