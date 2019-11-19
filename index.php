@@ -1,6 +1,6 @@
 <?php require_once "view/header.php" ?>
 <link rel="stylesheet" href="css/estilo.css">
-<h1>Hello, world!</h1>
+<h1></h1>
 
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
@@ -31,7 +31,7 @@
     <img src="img/alinha.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Alinhamento</h5>
-      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text">O alinhamento das rodas em um veículo é a correção geométrica executada no conjunto de elementos que formam a suspensão, a qual permite ao veículo manter sua trajetória. </p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
@@ -44,16 +44,16 @@
     </div>
   </div>
   <div class="card">
-    <img src="img/poli.jpg" class="card-img-top" alt="...">
+    <img src="img/poli.jpg" class="card-img-top bb" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <h5 class="card-title">Polimento</h5>
+      <p class="card-text">Polimento é todo o procedimento realizado com o intuito de gerar ou reativar o brilho de quaisquer superfícies. Em geral, toda peça natural ou de manufatura, pode ser polida.</p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
 </div>
 
-  <div class="container bb">
+  <div class="container ">
       <div class="card-deck mb-3 text-center">
         <div class="card mb-4 box-shadow">
           <div class="card-header">

@@ -8,10 +8,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Meu estilo-->
-    <link rel="stylesheet" href="css/estilo.css">
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title></title>
   </head>
-  <body>
+  <body class="bb">
 
    
 
@@ -73,4 +73,13 @@
   </div>
   
 </nav>
+<div class="container">
+<button type="button" class="btn btn-outline-primary">Pneus</button>
+<button type="button" class="btn btn-outline-secondary">Amortecedores</button>
+<button type="button" class="btn btn-outline-success">Velas</button>
+<button type="button" class="btn btn-outline-danger">Lanternas</button>
+<button type="button" class="btn btn-outline-warning">Aros</button>
+<button type="button" class="btn btn-outline-info">Retrovisores</button>
+<button type="button" class="btn btn-outline-dark">Acessórios</button>
+</div class="container">
 <div class="container">
