@@ -1,23 +1,40 @@
+body{
+    background-image: url(../cima.jpg);
+    background-attachment: fixed;
+    background-size: auto;
+    background-repeat: no-repeat;
+    
+  }
+.cc{
+    margin-top:20%;
+}
+.ww{
+margin-top:5%;
+margin-left:33%;
+}
+.jj{
+color: white;
+}
 .por{
    
-height: 40px; 
+height: 10%; 
 }
 .moto{
- height: 50px;
+ height: 25%;
 }
 .bri{
- height: 50px;
+ height: 25%;
 }
 .row{
-    margin-top: 50px !important;
+    margin-top: 25% !important;
 }
 
 .texc{
 color: #1E9ACD !important;
 }
 .card{
-    margin-top: 50px;
+    margin-top: 5%;
 }
-.bb{
-    background-color: ;
+.ll{
+    background-color:#2B2F35 !important;
 }

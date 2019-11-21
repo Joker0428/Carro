@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
+  <link rel='shortcut icon' href='carro.png'>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -73,13 +74,18 @@
   </div>
   
 </nav>
-<div class="container">
-<button type="button" class="btn btn-outline-primary">Pneus</button>
-<button type="button" class="btn btn-outline-secondary">Amortecedores</button>
-<button type="button" class="btn btn-outline-success">Velas</button>
-<button type="button" class="btn btn-outline-danger">Lanternas</button>
-<button type="button" class="btn btn-outline-warning">Aros</button>
-<button type="button" class="btn btn-outline-info">Retrovisores</button>
-<button type="button" class="btn btn-outline-dark">Acessórios</button>
-</div class="container">
+<ul class="nav justify-content-center ll">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Peças</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Serviços</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Contato</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
 <div class="container">
