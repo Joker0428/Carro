@@ -34,7 +34,7 @@
     <div class="card-body">
       <h5 class="card-title">Alinhamento</h5>
       <p class="card-text">O alinhamento das rodas em um veículo é a correção geométrica executada no conjunto de elementos que formam a suspensão, a qual permite ao veículo manter sua trajetória. </p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <p class="card-text"><small class="text-muted"></small></p>
     </div>
   </div>
   <div class="card">
@@ -42,7 +42,7 @@
     <div class="card-body">
       <h5 class="card-title">Troca De Pneus</h5>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <p class="card-text"><small class="text-muted"></small></p>
     </div>
   </div>
   <div class="card">
@@ -50,7 +50,7 @@
     <div class="card-body">
       <h5 class="card-title">Polimento</h5>
       <p class="card-text">Polimento é todo o procedimento realizado com o intuito de gerar ou reativar o brilho de quaisquer superfícies. Em geral, toda peça natural ou de manufatura, pode ser polida.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <p class="card-text"><small class="text-muted"></small></p>
     </div>
   </div>
 </div>
@@ -59,7 +59,7 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <p class="card-text"><small class="text-muted"></small></p>
   </div>
 </div>
 
